@@ -36,7 +36,7 @@ function search() {
             let n = 0
             while (n < data.channel.item.length) {
                 let li = document.createElement("li");
-                li.innerHTML = `${n + 1}. ${data.channel.item[n].sense[0].definition}`
+                li.innerHTML = `${n + 1}. ${data.channel.item[n].sense[0].definition.replaceAll("<DR />", "")}`
                 ul.appendChild(li)
                 n++
             }
