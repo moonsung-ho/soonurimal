@@ -56,7 +56,7 @@ footer {
 
 @media (max-width: 767px) {
   ul {
-    margin-left: 5% !important;
+    margin-left: 1% !important;
   }
   input {
     width: 80%;
