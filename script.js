@@ -1,6 +1,7 @@
 const ul = document.querySelector('ul');
 const input = document.querySelector("input#input");
 const recommended_soonurimal = document.querySelector("p#recommended_soonurimal")
+const footer = document.querySelector("footer")
 
 if (localStorage.getItem("recent_word")) {
     recommended_soonurimal.innerHTML = "최근 검색한 순우리말: " + localStorage.getItem("recent_word")
@@ -16,6 +17,7 @@ document.addEventListener("keyup", (e) => {
 })
 
 function search() {
+    footer.remove()
     recommended_soonurimal.remove()
     document.querySelector("b#searched_word").innerHTML = input.value
     ul.innerHTML = "";
