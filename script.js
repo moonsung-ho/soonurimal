@@ -42,7 +42,7 @@ function search() {
         .catch(err => {
             ul.innerHTML = ""
             let li = document.createElement("li");
-            li.innerHTML = '검색중 오류가 발생했거나 검색어가 순우리말이 아닙니다. 검색어를 확인해주세요.'
+            li.innerHTML = '검색 결과가 없습니다. 검색어를 확인해주세요.'
             ul.appendChild(li)
             console.error(err)
         })
