@@ -17,7 +17,9 @@ document.addEventListener("keyup", (e) => {
 })
 
 function search() {
-    footer.remove()
+    if (screen.width < 768) {
+        footer.remove()
+    }
     recommended_soonurimal.remove()
     document.querySelector("b#searched_word").innerHTML = input.value
     ul.innerHTML = "";
