@@ -6,7 +6,7 @@
   font-weight: 300;
 }
 html {
-  position: relative;
+  position: relative !important;
   height: 100vh;
 }
 li {
